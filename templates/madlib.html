@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block Title %} madlib {% endblock%}
+{% block heading %} Madlib! {% endblock%}
+
+{% block content %}
+There once was a {{ color }} 
+    <br>
+    <ul>
+    {% for every_noun in noun %}  
+        <li> {{every_noun}} </li>
+    {% endfor%}
+    </ul>
+    <br>
+    sitting in the Hackbright Lab.
+When {{ person }} went to pick it up, it burst into flames in a totally
+{{ adjective }} way.
+
+{% endblock%}
